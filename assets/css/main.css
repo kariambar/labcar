@@ -79,6 +79,7 @@ h2{
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	height: 110vh;
+	
 }
 
 .box{
@@ -185,13 +186,29 @@ width: 130px;
 	background-color: transparent;
 	border: 1px solid white;
 	color: white;
-	margin-left: 40px;
-	width: 70%;
+	width: 60%;
+}
+
+.form-group{
+	display: inline-block;
 }
 
 input::-webkit-input-placeholder { 
 	color: white; 
 } 
+
+.tarifas{
+	padding: 80px;
+
+}
+
+.textform{
+	margin-left: 50px;
+}
+
+span{
+	margin-top: 20px;
+}
 
 #map{
 	width: 40%;
