@@ -89,6 +89,21 @@ h2{
 	float: right;
 }
 
+.logo-header{
+	margin-left: 20px;
+}
+
+.registro{
+	font-weight: 300;
+}
+
+.linea{
+display: inline-block;
+border-bottom: 1px solid white;
+background-color: transparent;
+width: 130px;
+}
+
 /*HERO SECTION*/
 
 .hero{
@@ -119,6 +134,7 @@ h2{
 	padding-top: 10px;
 }
 
+
 /*INFORMACION SECTION*/
 
 .informacion{
@@ -126,13 +142,13 @@ h2{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	height: 70vh;
+	height: 90vh;
 }
 
 .transp{
 	background-color: rgba(8,2,14,0.5);
-	width: 50rem;
-	height: 70vh;
+	width: 400px;
+	height: 90vh;
 	float: right;
 	margin-left: 40rem;
 	padding-left: 10px;
@@ -158,7 +174,7 @@ h2{
 	background-color: rgba(247, 182, 23, 0.9);
 }
 
-/*CONDUCE SECTION*/
+/*GEOLOCATION SECTION*/
 .conduce{
 	background-color: #f7b617;
 	width: 100%;
@@ -173,15 +189,20 @@ h2{
 	width: 70%;
 }
 
-input{
-	color: white;
-}
+input::-webkit-input-placeholder { 
+	color: white; 
+} 
 
 #map{
 	width: 40%;
 	height: 60vh;
 	border: 2px solid whitesmoke;
 	margin-top: 10rem;
+}
+
+.btn-defaul{
+	background-color: transparent;
+	border: transparent;
 }
 
 /*FOOTER*/
@@ -198,13 +219,16 @@ p{
 	text-align: left;
 }
 
+p:hover{
+	color: #f7b617;;
+}
 .social{
 	display: inline-block;
 	color: white;
 	margin-top: 20rem;
 	font-size: 20px;
-
 }
+
 .iconos{
 	margin-top: 15rem;
 	padding-bottom: 14px;
@@ -212,4 +236,5 @@ p{
 
 h6{
 	color: white;
+	font-size: 15px;
 }
