@@ -20,7 +20,7 @@ function initMap(){
 			navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
 		}
 	}
-	document.getElementById("encuentrame").addEventListener("click", buscar);
+	document.getElementById("origen").addEventListener("click", buscar);
 	var latitud,longitud;
 
 	/*Agregaremos las variables funcionExito, con el que obtendremos nuestra latitud
@@ -34,7 +34,6 @@ function initMap(){
 		position: {lat: latitud, lng:longitud},
 		animation: google.maps.Animation.BOUNCE, // para que salte el monito
 		map: map,
-    icon: 'img/moto.png', // icnono
 	});
 
 	/*Aumentaremos la profundidad de visualización de nuestro mapa con map.setZoom y le asignaremos
@@ -46,6 +45,12 @@ function initMap(){
 		map.setZoom(17);
 		map.setCenter({lat: latitud,lng: longitud});
 	}
+
+	
+  var marker = new google.maps.Marker({
+  position: uluru,
+  map: map
+});
 
 	var funcionError = function (error){
 		alert("Tenemos un problema con encontrar tu ubicación");
