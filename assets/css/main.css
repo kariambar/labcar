@@ -5,6 +5,7 @@
 
 body{
 	font-family: 'Montserrat', sans-serif;
+	background-color: white;
 }
 
 .img-responsive {
@@ -12,17 +13,18 @@ body{
 }
 
 h1{
-	color: #292b2c;
-	font-weight: 900;
-	text-align: center;
-	font-size: 40px;
+	color: white;
+	font-weight: 500;
+	text-align: left;
+	font-size: 35px;
+	padding: 20px;
 }
 
 h4{
-	color: #292b2c;
-	text-align: center;
-	padding-top: 20px;
-	font-weight: 300;
+	color: white;
+	text-align: left;
+	padding: 20px;
+	font-weight: 500;
 
 }
 
@@ -36,17 +38,53 @@ h2{
 }
 
 /*Nav*/
-.navbar-default {
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	width: 100%;
 	background-color: white;
-	border-color: white;
-	padding: 5px 50px;
+}
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+	padding: 15px 50px;
 	color: gray;
+	width: 100%;
+}
+
+.navbar-collapse{
+	background-color: white;
+	width: 100%;
 }
 
  .navbar-default .navbar-nav>li>a{
- color: white;
+ color: #2f2f2f;
 }
 
+.navbar-default .navbar-nav>li>a:hover{
+ color: #f8bc00;
+}
 .navbar-brand{
-	padding: 0;
+	padding-left: 30%;
+}
+
+#header{
+	width: 100%;
+	background-color: white;
+	height: 15vh;
+}
+
+.first-section{
+	background-image: url(../img/taxi.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	height: 130vh;
+}
+
+.box{
+	background-color: #f7b617;
+	margin-top: 200px;
+	width: 40%;
+	height: 65vh;
+	float: right;
 }
