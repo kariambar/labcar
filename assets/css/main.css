@@ -1,0 +1,52 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+h1{
+	color: #292b2c;
+	font-weight: 900;
+	text-align: center;
+	font-size: 40px;
+}
+
+h4{
+	color: #292b2c;
+	text-align: center;
+	padding-top: 20px;
+	font-weight: 300;
+
+}
+
+h2{
+	color: white;
+	text-align: center;
+	font-weight: 350;
+	font-size: 40px;
+	margin-top: 15%;
+
+}
+
+/*Nav*/
+.navbar-default {
+	background-color: white;
+	border-color: white;
+	padding: 5px 50px;
+	color: gray;
+}
+
+ .navbar-default .navbar-nav>li>a{
+ color: white;
+}
+
+.navbar-brand{
+	padding: 0;
+}
