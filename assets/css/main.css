@@ -98,8 +98,8 @@ h2{
 }
 
 .celular{
-	margin-top: 14rem;
-	margin-left: 10rem;
+	margin-top: 8rem;
+	margin-left: 8rem;
 }
 
 .titlehero{
@@ -118,14 +118,69 @@ h2{
 	background-image: url(../img/conduce.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center bottom;
-	height: 100vh;
+	background-position: center center;
+	height: 70vh;
 }
 
 .transp{
 	background-color: rgba(8,2,14,0.5);
 	width: 50rem;
-	height: 100vh;
+	height: 70vh;
 	float: right;
 	margin-left: 40rem;
+	padding-left: 10px;
+}
+
+.titleinfo{
+	padding-top: 10rem;
+}
+.bajadainfo{
+	font-weight: 300;
+	padding-top: 0;
+}
+.btn-secondary{
+	background-color: #f7b617;
+	margin-left: 25px;
+	height: 50px;
+	color:white;
+	margin-top: 0;
+	width: 60%;
+}
+
+.btn-secondary:hover{
+	background-color: rgba(247, 182, 23, 0.9);
+}
+
+/*CONDUCE SECTION*/
+.conduce{
+	background-color: #f7b617;
+	width: 100%;
+	height: 90vh;
+}
+
+.form-control{
+	background-color: transparent;
+	border: 1px solid white;
+	color: white;
+	margin-left: 40px;
+	width: 70%;
+}
+
+input{
+	color: white;
+}
+
+#map{
+	width: 40%;
+	height: 60vh;
+	border: 2px solid whitesmoke;
+	margin-top: 10rem;
+}
+
+/*FOOTER*/
+footer{
+	background-color: #2b2b2b;
+	width: 100%;
+	height: 100vh;
+	padding: 80px;
 }
