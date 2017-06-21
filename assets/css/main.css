@@ -181,6 +181,28 @@ input{
 footer{
 	background-color: #2b2b2b;
 	width: 100%;
-	height: 100vh;
+	height: 90vh;
 	padding: 80px;
+}
+
+p{
+	color: white;
+	cursor: pointer;
+	text-align: left;
+}
+
+.social{
+	display: inline-block;
+	color: white;
+	margin-top: 20rem;
+	font-size: 20px;
+
+}
+.iconos{
+	margin-top: 15rem;
+	padding-bottom: 14px;
+}
+
+h6{
+	color: white;
 }
