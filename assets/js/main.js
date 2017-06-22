@@ -9,12 +9,6 @@ function initMap(){
   });
   directionsDisplay.setMap(map);
 
-
-	/*Dentro de la función initMap(), agregamos la funcion buscar()
-		*.getCurrentPosition -> permite al usuario obtener su ubicación actual, el parámetro funcionExito,
-		se ejecuta solo cuando el usuario comparte su ubicación, mientras que funcionError se ejecuta
-		cuando se produce un error en la geolocalización.
-	*/
 	function buscar(){
 		if(navigator.geolocation){
 			navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
@@ -23,40 +17,25 @@ function initMap(){
 	document.getElementById("origen").addEventListener("click", buscar);
 	var latitud,longitud;
 
-	/*Agregaremos las variables funcionExito, con el que obtendremos nuestra latitud
-	o longituf y además crearemos un marcador de nuestra ubicación*/
-
 	var funcionExito = function(posicion){
 		latitud = posicion.coords.latitude;
 		longitud = posicion.coords.longitude;
 
 	var miUbicacion = new google.maps.Marker({
 		position: {lat: latitud, lng:longitud},
-		animation: google.maps.Animation.BOUNCE, // para que salte el monito
+		animation: google.maps.Animation.BOUNCE, 
 		map: map,
 	});
-
-	/*Aumentaremos la profundidad de visualización de nuestro mapa con map.setZoom y le asignaremos
-	un nuevo centro con map.setCenter.
-	También añadimos funcionError con un mensaje para el usuario, en caso de que nuestra geolocalización
-	falle.
-	*/
 
 		map.setZoom(17);
 		map.setCenter({lat: latitud,lng: longitud});
 	}
 
-	
-  var marker = new google.maps.Marker({
-  position: uluru,
-  map: map
-});
 
 	var funcionError = function (error){
 		alert("Tenemos un problema con encontrar tu ubicación");
 	}
 
-  /* Autocomplete */
   var inicio = (document.getElementById('origen'));
   var autocomplete = new google.maps.places.Autocomplete(inicio);
   autocomplete.bindTo('bounds', map);
